@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #e5e5e5;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+.App {
+  width: 550px;
+
+  margin: auto;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+.navbar {
+  height: 80px;
+  width: 550px;
+  display: flex;
+  background: #fff;
+  margin: 50px auto;
+  margin-bottom: 0;
+  padding: 22px auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.navbar img {
+  max-width: 82px;
+  height: 24px;
+  margin: 28px 30px;
+}
+section {
+  padding: 20px;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.hero-section > img {
+  max-width: 395px;
+  max-height: 232px;
+  align-self: center;
+}
+.hero-section h1 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 37px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+.hero-section p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  margin-left: 37px;
+  margin-top: 0;
+  margin-right: 194px;
+  margin-bottom: 0;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.card-content:first-child {
+  margin-left: 55px;
+}
+.card-pic {
+  width: 176px;
+  height: 235px;
+  padding-bottom: 9px;
+  margin-top: 20px;
+}
+.rating- {
+  width: 14px;
+  height: 14px;
+  padding-right: 5px;
+}
+.rating {
+  display: flex;
+  font-size: 12px;
+}
+.rating-num {
+  padding-right: 5px;
+  color: #222222;
+}
+.count {
+  color: #918e9b;
+}
+.card-content > p {
+  text-align: left;
+  margin: 8px 0;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.card-content > p span {
+  text-align: left;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.contact-card {
+  flex-basis: 225px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+.contact-card > img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.contact-card > h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+}
+
+.info-group > img {
+  height: 11px;
+  margin-right: 8px;
+}
+
+.info-group > p {
+  margin-block: 3px;
+  font-size: 12px;
+  color: #2b283a;
+}
+.card-contents {
+  /* margin-top: 49px; */
+  /* margin-left: 37px; */
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-between; */
+  overflow: hidden;
+}
