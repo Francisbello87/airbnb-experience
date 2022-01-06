@@ -2,18 +2,25 @@ import React from "react";
 import star from "../images/Star 1.png";
 
 export default function Card(props) {
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.location === "Online") {
+    badgeText = "ONLINE";
+  }
   return (
     <div className="card-content">
+      {badgeText && <div className="card-badge">{badgeText}</div>}
       <img
-        src={process.env.PUBLIC_URL + props.img}
+        src={process.env.PUBLIC_URL + props.coverImg}
         className="card-pic"
         alt="user pic"
       />
       <div className="rating">
         <img src={star} alt="rating star" className="rating-" />
-        <span className="rating-num">{props.rating}</span>
+        <span className="rating-num">{props.stats.rating}</span>
         <span className="count">
-          ({props.reviewCount})&#8226;{props.location}
+          ({props.stats.reviewCount})&#8226;{props.location}
         </span>
         <p>{props.description}</p>
       </div>
